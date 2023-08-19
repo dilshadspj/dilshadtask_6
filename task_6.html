@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Box Model</title>
+  <style>
+    body {
+      margin: 10px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      background-color: cyan;
+    }
+
+    .text-3d {
+      text-align: center;
+      font-size: 60px;
+      color: #000000;
+      text-shadow: 3px 3px 0 #ccc, 5px 5px 0 #999;
+    }
+
+    .container {
+      display: flex;
+      position: relative;
+      border: 5px solid black;
+      padding: 40px;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+    }
+
+    .layer1,
+    .layer2,
+    .layer3,
+    .layer4 {
+      margin: 20px;
+      width: 200px;
+      height: 200px;
+      border: 2px solid gold;
+      border-radius: 300px;
+      text-align: center;
+      padding: 50px 50px 50px 50px;
+      box-shadow: 2px 2px 4px green;
+
+    }
+
+    .layer1 a,
+    button,
+    .layer2 a,
+    button,
+    .layer3 a,
+    button,
+    .layer4 a,
+    button {
+      font-size: 13px;
+      background-color: rgb(24, 83, 211);
+      border: 2px solid rgb(0, 0, 0);
+      padding: 5px 5px;
+      margin: 10px 10px;
+      color: black;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+
+    .layer1 a:hover,
+    .layer2 a:hover,
+    .layer3 a:hover,
+    .layer4 a:hover {
+      background: yellow;
+      color: white;
+      width: 50px;
+    }
+
+    .layer1 button:hover,
+    .layer2 button:hover,
+    .layer3 button:hover,
+    .layer4 button:hover {
+      cursor: pointer;
+      background: yellow;
+      color: white;
+      width: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="text-3d">THIS IS BOX MODEL</h1>
+  <div class="container">
+    <div class="layer1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Que laboriosam repudiandae, quidem
+      quia in deleniti deserunt sit, dolorem earum expedita iste atque? Ducimus repellat, accusantium laboriosam aut
+      illum veritatis.
+      <a href="#">view more</a>
+      <button>submit</button>
+    </div>
+    <div class="layer2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Que laboriosam repudiandae, quidem
+      quia in deleniti deserunt sit, dolorem earum expedita iste atque? Ducimus repellat, accusantium laboriosam aut
+      illum veritatis.
+      <a href="#">view more</a>
+      <button>submit</button>
+    </div>
+    <div class="layer3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Que laboriosam repudiandae, quidem
+      quia in deleniti deserunt sit, dolorem earum expedita iste atque? Ducimus repellat, accusantium laboriosam aut
+      illum veritatis.
+      <a href="#">view more</a>
+      <button>submit</button>
+    </div>
+    <div class="layer4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Que laboriosam repudiandae, quidem
+      quia in deleniti deserunt sit, dolorem earum expedita iste atque? Ducimus repellat, accusantium laboriosam aut
+      illum veritatis.
+      <a href="#">view more</a>
+      <button>submit</button>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
